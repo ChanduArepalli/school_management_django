@@ -1,0 +1,29 @@
+package - pip3 install django
+
+1. create Project
+    -  django-admin startproject school_management (project_name)
+    -  cd school_management
+
+2. Database connection and update
+    - python3 manage.py makemigrations
+    - python3 manage.py migrate
+
+3. Execute project - python3 manage.py runserver
+4. Stop project - control + c
+
+5. create super user
+    -  python3 manage.py createsuperuser
+
+6. Create New App
+    - python3 manage.py startapp student (app_name)
+    - added App Name in project_folder/settings.py --> INSTALLED_APPS
+
+    - Create a Model in app_folder/models.py
+    - Update database with new Model
+        - python3 manage.py makemigrations
+        - python3 manage.py migrate
+
+    - Add model to admin.py file
+    - Run Server
+
+

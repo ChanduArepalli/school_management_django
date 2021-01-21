@@ -1,0 +1,8 @@
+pip3 install django
+django-admin startproject project_name
+cd project_name
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py runserver
+python3 manage.py createsuperuser
+python3 manage.py startapp app_name
